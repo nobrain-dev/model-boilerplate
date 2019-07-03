@@ -1,0 +1,17 @@
+<?php
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@Symfony' => false,
+        'array_syntax' => ['syntax' => 'short'],
+    ])
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+            ->exclude('config')
+            ->exclude('doc')
+            ->exclude('var')
+            ->in(__DIR__)
+            ->ignoreVCS(true)
+            ->files()
+    )
+;

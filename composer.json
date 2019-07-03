@@ -1,0 +1,38 @@
+{
+    "name": "nobrain-dev/model-boilerplate",
+    "description": "model boilerplate",
+    "type": "project",
+    "authors": [
+        {
+            "name": "nobrain-dev",
+            "email": "nobraindev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ramsey/uuid": "^3.8"
+    },
+    "require-dev": {
+        "behat/behat": "^3.5",
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "phpstan/phpstan": "^0.11.8",
+        "phpunit/phpunit": "6.5",
+        "prolic/fpp": "dev-master"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Core\\Tests\\": "core/tests/"
+        }
+    }
+}
